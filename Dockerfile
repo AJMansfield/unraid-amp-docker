@@ -35,7 +35,7 @@ RUN chmod +x start.sh
 
 ## create required volumes
 RUN mkdir /home/amp/server_data \
-&& ln -vs /home/amp/.ampdata/instances/MCMA/Minecraft /home/AMP/server_data
+&& ln -vs /home/amp/.ampdata/instances/ADS-Instance /home/amp/server_data
 VOLUME ["/home/amp/server_data"]
 
 
