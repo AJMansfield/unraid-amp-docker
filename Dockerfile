@@ -35,7 +35,7 @@ RUN chmod +x start.sh
 
 ## create required volumes
 RUN mkdir /home/amp/server_data \
-&& ln -vfnsT /home/amp/server_data /home/amp/.ampdata
+&& ln -vs /home/amp/.ampdata/instances/${MODULE} /home/amp/server_data
 VOLUME ["/home/amp/server_data"]
 
 
